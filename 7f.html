@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   
+    <form>
+        <p>Email</p>
+        <input type="email" placeholder=" " id="i1" onfocus="myFocus()" onblur="myBlur()" >
+        <p>By clicking Agree & Join, you agree to the Privacy Policy</p>
+        
+    </form>
+    <script>
+        function myFocus(){
+            document.getElementById("i1").style.background="red";
+        }
+        function myBlur(){
+            document.getElementById("i1").style.background="blue";
+        }
+        
+
+    </script>
+    
+    <style>
+        .button {
+            background-color:blue;
+            border: none;
+            color:white;
+            padding: 15px 100px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius:120px;
+          }
+          
+          .disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+          }
+          
+    </style>
+    <body>
+        
+        <button class="button">   Agree & Join  </button>
+    </body>
+</html>
